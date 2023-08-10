@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- component -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<div class="min-h-screen">
+  <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+  <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div class="flex flex-row items-center justify-between p-4">
+        <a href="#" class="text-lg font-semibold tracking-widest text-gray-900  rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img src="" alt="">Envee Wheels</a>
+        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Home</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./about.html">About us</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Products</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Investment</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./R&D.html">R & D</a>  
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact Us</a> 
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- ABOUT  -->
+<!-- component -->
+<div class="py-16 bg-white">  
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+          <div class="md:5/12 lg:w-5/12">
+            <img src="/assets/Envee_Wheels-removebg-preview.png" alt="image" loading="lazy" width="80%" height="80%">
+          </div>
+          <div class="md:7/12 lg:w-6/12">
+            <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">Envee Wheels Pvt.Ltd</h2>
+            <p class="mt-6 text-gray-600">Introducing Envee Wheels Limited
+              Envee Wheels Limited is a leading electric vehicle manufacturer committed to revolutionizing the transportation industry. Our mission is to create environmentally friendly vehicles that offer unparalleled performance, style, and innovation. We are driven by a passion for sustainability and a commitment to excellence in everything we do.
+              What sets Envee Wheels apart from our competitors is our focus on cutting-edge technology and design. Our vehicles feature advanced battery systems and autonomous driving features, making them some of the most innovative products on the market. Additionally, our sleek and modern designs make our cars, trucks, and buses stand out from the crowd. At Envee Wheels, we are proud to be leading the way in the electric vehicle industry.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- what d -->
+  <div class="p-4 text-gray-600 px-20">
+	<h1 class="mb-8 text-center text-3xl font-bold text-indigo-900">This is - what we do :</h1>
+
+	<ul class="grid place-content-center sm:grid-cols-2 gap-8">
+		<li class="flex">
+			<div class="px-4 text-5xl font-extralight text-indigo-700">01.</div>
+			<div>
+				<div class="text-xl font-bold text-indigo-800">Research</div>
+				<p class="max-w-xs py-2 text-sm text-indigo-900">We love numbers! We collect data and insights, analyze
+					them then take the time to learn about your objectives, ask the right questions to understand your
+					business.</p>
+			</div>
+		</li>
+		<li class="flex">
+			<div class="px-4 text-5xl font-extralight text-indigo-700">02.</div>
+			<div>
+				<div class="text-xl font-bold text-indigo-800">Strategey</div>
+				<p class="max-w-xs py-2 text-sm text-indigo-900">Solutions are born from proper research, hard work, and
+					strong strategy. We build data-driven roadmaps for every project to make pave the way to success.
+				</p>
+			</div>
+		</li>
+		<li class="flex">
+			<div class="px-4 text-5xl font-extralight text-indigo-700">03.</div>
+			<div>
+				<div class="text-xl font-bold text-indigo-800">Design</div>
+				<p class="max-w-xs py-2 text-sm text-indigo-900">We design the right solution for your business. We
+					craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
+				</p>
+			</div>
+		</li>
+		<li class="flex">
+			<div class="px-4 text-5xl font-extralight text-indigo-700">04.</div>
+			<div>
+				<div class="text-xl font-bold text-indigo-800">Development</div>
+				<p class="max-w-xs py-2 text-sm text-indigo-900">We build the right solution for your business. We
+					craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
+				</p>
+			</div>
+		</li>
+		<li class="flex">
+			<div class="px-4 text-5xl font-extralight text-indigo-700">05.</div>
+			<div>
+				<div class="text-xl font-bold text-indigo-800">Deployment</div>
+				<p class="max-w-xs py-2 text-sm text-indigo-900">We build the right solution for your business. We
+					craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
+				</p>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="container  mx-auto grid">
+           
+            
+    <!-- Cards -->
+    <h1 class="mb-8 text-center text-3xl font-bold text-indigo-900">Our Stats :</h1>
+
+    <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+      <!-- Card -->
+      <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800 pt-10">
+        <div class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
+            My Blog Posts
+          </p>
+          <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
+            10
+          </p>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800 pt-10">
+        <div class="p-3 mr-4 text-green-500 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-500">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
+              My Forum Posts
+          </p>
+          <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
+           24
+          </p>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800 pt-10">
+          <div class="p-3 mr-4 text-teal-500 bg-teal-100 rounded-full dark:text-teal-100 dark:bg-teal-500">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+        <div>
+          <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
+            My Tutorials
+          </p>
+          <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
+            376
+          </p>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800 pt-10">
+       
+        <div class="p-3 mr-4 text-blue-500 bg-blue-100 rounded-full dark:text-blue-100 dark:bg-blue-500">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
+           My Purchases
+          </p>
+          <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
+            35
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+</div>
+
+
+<!-- component  -->
+<div class="flex items-end w-full min-h-screen bg-White">
+
+  <footer class="w-full text-gray-700 bg-gray-100 body-font">
+      <div
+          class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+          <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+              <a class="flex items-center justify-center text-2xl font-extrabold text-green-900 title-font md:justify-start">Envee Wheels</a>
+              <p class="mt-2 text-sm text-gray-500">Design, Code and Ship!</p>
+              <div class="mt-4">
+                  <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                          </svg>
+                      </a>
+                      <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              class="w-5 h-5" viewBox="0 0 24 24">
+                              <path
+                                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                              </path>
+                          </svg>
+                      </a>
+                      <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                          </svg>
+                      </a>
+                      <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path stroke="none"
+                                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                              </path>
+                              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                          </svg>
+                      </a>
+                  </span>
+              </div>
+          </div>
+          <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+              <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                  <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+                  <nav class="mb-10 list-none">
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Careers</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
+                      </li>
+                  </nav>
+              </div>
+              <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                  <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support</h2>
+                  <nav class="mb-10 list-none">
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Help Resources</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Release Updates</a>
+                      </li>
+                  </nav>
+              </div>
+              <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                  <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Platform
+                  </h2>
+                  <nav class="mb-10 list-none">
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+                      </li>
+                  </nav>
+              </div>
+              <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                  <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+                  <nav class="mb-10 list-none">
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+                      </li>
+                      <li class="mt-3">
+                          <a class="text-gray-500 cursor-pointer hover:text-gray-900">+123-456-7890</a>
+                      </li>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <div class="bg-green-300">
+          <div class="container px-5 py-4 mx-auto">
+              <p class="text-sm font-audiowide text-gray-700 capitalize xl:text-center"> Envee Wheels ©2023 All rights reserved </p>
+          </div>
+      </div>
+  </footer>
+
+</div>
+  </div>
+  
+</body>
+</html>
